@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoku</title>
+    <link href="style.css" rel="stylesheet">
+    <link rel="icon" type="image/gif/png" href="img/img.png">
+    <script src="app.js"></script>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="game">
+            <div class="row">
+                <div class="column">
+                    <button onclick="btn('00')" id="btn00" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('01')" id="btn01" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('02')" id="btn02" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('03')" id="btn03" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('04')" id="btn04" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('05')" id="btn05" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('06')" id="btn06" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('07')" id="btn07" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('08')" id="btn08" class="button"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <button onclick="btn('10')" id="btn10" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('11')" id="btn11" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('12')" id="btn12" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('13')" id="btn13" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('14')" id="btn14" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('15')" id="btn15" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('16')" id="btn16" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('17')" id="btn17" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('18')" id="btn18" class="button"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <button onclick="btn('20')" id="btn20" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('21')" id="btn21" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('22')" id="btn22" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('23')" id="btn23" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('24')" id="btn24" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('25')" id="btn25" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('26')" id="btn26" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('27')" id="btn27" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('28')" id="btn28" class="button"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <button onclick="btn('30')" id="btn30" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('31')" id="btn31" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('32')" id="btn32" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('33')" id="btn33" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('34')" id="btn34" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('35')" id="btn35" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('36')" id="btn36" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('37')" id="btn37" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('38')" id="btn38" class="button" style="background-color: #FFC107;"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <button onclick="btn('40')" id="btn40" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('41')" id="btn41" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('42')" id="btn42" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('43')" id="btn43" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('44')" id="btn44" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('45')" id="btn45" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('46')" id="btn46" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('47')" id="btn47" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('48')" id="btn48" class="button" style="background-color: #FFC107;"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <button onclick="btn('50')" id="btn50" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('51')" id="btn51" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('52')" id="btn52" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('53')" id="btn53" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('54')" id="btn54" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('55')" id="btn55" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('56')" id="btn56" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('57')" id="btn57" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('58')" id="btn58" class="button" style="background-color: #FFC107;"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <button onclick="btn('60')" id="btn60" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('61')" id="btn61" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('62')" id="btn62" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('63')" id="btn63" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('64')" id="btn64" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('65')" id="btn65" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('66')" id="btn66" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('67')" id="btn67" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('68')" id="btn68" class="button"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <button onclick="btn('70')" id="btn70" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('71')" id="btn71" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('72')" id="btn72" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('73')" id="btn73" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('74')" id="btn74" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('75')" id="btn75" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('76')" id="btn76" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('77')" id="btn77" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('78')" id="btn78" class="button"></button>
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <button onclick="btn('80')" id="btn80" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('81')" id="btn81" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('82')" id="btn82" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('83')" id="btn83" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('84')" id="btn84" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('85')" id="btn85" class="button" style="background-color: #FFC107;"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('86')" id="btn86" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('87')" id="btn87" class="button"></button>
+                </div>
+                <div class="column">
+                    <button onclick="btn('88')" id="btn88" class="button"></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <div class="row">
+            <div class="column">
+                <button onclick="btnNums(1)" id="btn1" class="button">1</button>
+            </div>
+            <div class="column">
+                <button onclick="btnNums(2)" id="btn2" class="button">2</button>
+            </div>
+            <div class="column">
+                <button onclick="btnNums(3)" id="btn3" class="button">3</button>
+            </div>
+            <div class="column">
+                <button onclick="btnNums(4)" id="btn4" class="button">4</button>
+            </div>
+            <div class="column">
+                <button onclick="btnNums(5)" id="btn5" class="button">5</button>
+            </div>
+            <div class="column">
+                <button onclick="btnNums(6)" id="btn6" class="button">6</button>
+            </div>
+            <div class="column">
+                <button onclick="btnNums(7)" id="btn7" class="button">7</button>
+            </div>
+            <div class="column">
+                <button onclick="btnNums(8)" id="btn8" class="button">8</button>
+            </div>
+            <div class="column">
+                <button onclick="btnNums(9)" id="btn9" class="button">9</button>
+            </div>
+        </div>
+    </div>
+    <div class="controls">
+        <div class="row">
+            <button onclick="start()" style="padding: 10px; margin: 10px;">Start</button>
+            <!-- <button onclick="check()" style="padding: 10px; margin: 10px;">Check</button> -->
+            <button onclick="clearElement()" style="padding: 10px; margin: 10px;">Clear</button>
+            <button onclick="submit()" style="padding: 10px; margin: 10px;">Submit</button>
+        </div>
+    </div>
+</body>
+
+</html>
