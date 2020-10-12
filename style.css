@@ -11,7 +11,7 @@
     width: 50px;
     height: 50px;
     /* padding: 5px; */
-    background-color: white;
+    background-color: greenyellow;
 }
 .button{
     width: 100%;
@@ -36,8 +36,9 @@ p {
 }
 button {
     font-size: xx-large;
-    background-color: white;
+    background-color:wheat;
 }
+
 @media screen and (max-width: 700px){
     .column {
         width: 30px;
@@ -45,6 +46,7 @@ button {
     }
     button {
         font-size: x-large;
+        background-color: brown;
     }
 }
 @media screen and (max-width: 450px){
@@ -67,4 +69,5 @@ button {
     button {
         font-size: x-small;
     }
+   
 }
